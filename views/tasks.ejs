@@ -1,0 +1,38 @@
+<%- include('partials/header') %>
+  <section class="task-list">
+    <% if (tasks.length === 0) { %>
+      <p>No tasks found. Add a new task!</p>
+    <% } else { %>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Due Date</th>
+            <th>Priority</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% tasks.forEach(task => { %>
+            <tr class="<%= task.completed ? 'completed' : '' %>">
+              <td><%= task.title %></td>
+              <td><%= task.description %></td>
+              <td><%= task.dueDate.toLocaleDateString() %></td>
+              <td class="priority-<%= task.priority %>"><%= task.priority %></td>
+              <td><%= task.completed ? 'Completed' : 'Pending' %></td>
+              <td class="actions">
+                <a href="/toggle/<%= task._id %>" class="toggle-btn">
+                  <%= task.completed ? 'Undo' : 'Complete' %>
+                </a>
+                <a href="/edit/<%= task._id %>" class="edit-btn">Edit</a>
+                <a href="/delete/<%= task._id %>" class="delete-btn">Delete</a>
+              </td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    <% } %>
+  </section>
+<%- include('partials/footer') %>

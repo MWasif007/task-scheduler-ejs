@@ -1,0 +1,161 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 0 5px;
+}
+
+nav a:hover {
+  background: #e8491d;
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+}
+
+.task-list {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f4f4f4;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.priority-low {
+  color: #28a745;
+}
+
+.priority-medium {
+  color: #ffc107;
+}
+
+.priority-high {
+  color: #dc3545;
+}
+
+.actions a {
+  padding: 5px 10px;
+  margin-right: 5px;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.toggle-btn {
+  background: #17a2b8;
+  color: white;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: #212529;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.task-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input {
+  margin-left: 10px;
+}
+
+.btn {
+  background: #35424a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #e8491d;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #35424a;
+  color: white;
+  margin-top: 20px;
+}
