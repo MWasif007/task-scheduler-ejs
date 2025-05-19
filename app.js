@@ -22,6 +22,9 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Routes
 app.use('/', taskRoutes);
+app.get("/", (req, res) => {
+  res.redirect("/tasks"); // Or your main route
+});
 
 // Start server
 const PORT = process.env.PORT || 3000;
